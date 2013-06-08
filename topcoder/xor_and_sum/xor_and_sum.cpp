@@ -51,6 +51,10 @@ int xor_and_sum(vector<int>* p_src_data)
 int get_one(int data)
 {
     int one = 0;
-    
+    while(0 == (int)data / 2) 
+    {
+        data = data / 2;
+        one++;  
+    }
     return one;
 }
