@@ -54,10 +54,6 @@ void build_graph(vector<node*>* p_nodes, vector<vertex*>* p_vertexes)
     vertex* v_6 = new vertex;
     vertex* v_7 = new vertex;
     vertex* v_8 = new vertex;
-    
-    v_0->from_node = n_0;
-    v_0->to_node = n_1;
-    v_0->cost = 1.0; 
 } 
 
 void dijkstra_search(vector<node*>* p_nodes, vector<vertex*>* p_vertexes, vector<int>* p_route, node* p_end)
