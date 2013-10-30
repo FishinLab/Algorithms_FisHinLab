@@ -14,7 +14,7 @@ void revert_bits(char* data, int len){
         q--;
         len = len - 2;
     }
-    cout << "revert_bits: " << data << endl;
+    //cout << "revert_bits: " << data << endl;
 }
 
 void bi_revert_bits(char* data, int len){
@@ -29,10 +29,10 @@ void bi_revert_bits(char* data, int len){
         c++;
     }
     */
-    revert_bits(data, len);
-    cout << data << endl;
     bi_revert_bits(data, (int)(len / 2));
     bi_revert_bits(data + (int)(len / 2), (int)(len / 2));
+    revert_bits(data, len);
+    cout << data << endl;
 }
 
 int main(int argc, const char* argv[]){
